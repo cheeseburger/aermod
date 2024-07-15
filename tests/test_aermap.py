@@ -1,0 +1,1 @@
+import unittestfrom aermod.aermap import AERMAPclass TestAERMAP(unittest.TestCase):    def test_create(self):        map = AERMAP()        config = {'key': 'value'}        map.create(config)        self.assertEqual(map.config, config)if __name__ == '__main__':    unittest.main()

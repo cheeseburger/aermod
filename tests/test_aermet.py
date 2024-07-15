@@ -1,0 +1,1 @@
+import unittestfrom aermod.aermet import AERMETclass TestAERMET(unittest.TestCase):    def test_create(self):        met = AERMET()        config = {'key': 'value'}        met.create(config)        self.assertEqual(met.config, config)if __name__ == '__main__':    unittest.main()

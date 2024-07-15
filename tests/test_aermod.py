@@ -1,0 +1,1 @@
+import unittestfrom aermod.aermod import AERMODclass TestAERMOD(unittest.TestCase):    def test_create_domain(self):        model = AERMOD()        domain_details = {'extent': [0, 100, 0, 100], 'resolution': 1}        model.create_domain(domain_details)        self.assertEqual(model.domain_details, domain_details)if __name__ == '__main__':    unittest.main()
